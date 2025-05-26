@@ -22,7 +22,7 @@ html, body {
 .site-name {
   position: absolute;
   top: 40px;
-  left: 40px;
+  left: 25px;
   font-size: 1.5em;
   letter-spacing: .05em;
 }
@@ -68,7 +68,7 @@ html, body {
 /* 整个主页 hero 区及其链接 */
 .home-hero,
 .home-hero a {
-  color: #000000;            /* 文字全部变白 */
+  color: #f8eedc;            /* 文字全部变白 */
 }
 
 /* 仅主页里的中文引用 */
