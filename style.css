@@ -129,12 +129,3 @@ footer {
   font-size: 15px;   /* 例：1.125 rem ≈ 18 px（以根 16 px 计算）*/
   line-height: 1;      /* 如已满意可省略 */
 }
-
-/* 个人照片样式（About 页专用）*/
-.subpage .profile-pic {
-  display: block;
-  max-width: 10px;   /* “适中”尺寸：最大 220 px，可按需改大或改小 */
-  width: 10px;         /* 小屏自适应；超过 max-width 时以 max 为准 */
-  height: auto;       /* 保持纵横比 */
-  margin: 10px auto;  /* 顶部-正文之间各留 24 px 并水平居中 */
-}
