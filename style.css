@@ -1,0 +1,95 @@
+/* ----------------------------------------- */
+/*  全站基准字体与排版                       */
+/* ----------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  font-size: 12px;        /* 全站统一 12px */
+  color: #000;
+}
+
+/* ----------------------------------------- */
+/*  主页专用：全屏背景                       */
+/* ----------------------------------------- */
+.home-hero {
+  background: url("cover.jpg") center/cover no-repeat fixed;
+  height: 100vh;          /* 占满视口高度 */
+  position: relative;     /* 方便绝对定位子元素 */
+}
+
+/* 左上姓名 */
+.site-name {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 1.5em;
+  letter-spacing: .05em;
+}
+
+/* 垂直导航栏 */
+.nav-vertical {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);   /* 水平+垂直居中 */
+  text-align: center;
+}
+.nav-vertical li {
+  margin: 8px 0;
+}
+.nav-vertical a {
+  text-decoration: none;
+  color: inherit;         /* 纯文本黑色 */
+}
+
+/* 右下中文引用 */
+.quote {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  max-width: 240px;       /* 防止过长 */
+  line-height: 1.6;
+}
+
+/* 页脚 */
+footer {
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* ----------------------------------------- */
+/*  二级页面通用样式                         */
+/* ----------------------------------------- */
+.subpage {
+  min-height: 100vh;
+  background: #4d0000;    /* 高灰度深红色 */
+  position: relative;
+  padding-left: 240px;    /* 预留给导航 */
+}
+
+/* 继续复用垂直导航栏：固定在左中 */
+.subpage .nav-vertical {
+  position: fixed;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 页面标题——居中靠上 */
+.page-title {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+/* 主内容区——右侧留白，可自行扩展 */
+.main-content {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  line-height: 1.8;
+}
