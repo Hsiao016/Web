@@ -129,3 +129,98 @@ footer {
   font-size: 15px;   /* 例：1.125 rem ≈ 18 px（以根 16 px 计算）*/
   line-height: 1;      /* 如已满意可省略 */
 }
+
+/* 仅 About 页头像：文字环绕在左，图片固定右侧 */
+.about-page .profile-pic {
+  float: right;              /* 关键：贴右侧并让文字环绕 */
+  max-width: 220px;          /* 控制最大宽度 */
+  width: 45%;                /* 小屏时可缩到容器 45% */
+  height: auto;
+  margin: 0 0 24px 24px;     /* 左侧留 24px 间距，下方留空 */
+}
+
+/* ─── Projects 页次导航栏 ──────────────────────────────── */
+.project-subnav {
+  display: flex;                /* 让 <ul> 居中 */
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.project-subnav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;       /* 垂直排列 */
+  align-items: center;
+  gap: 48px;                    /* 每栏之间的垂直间距 */
+}
+
+.project-subnav li a {
+  text-decoration: none;
+  color: inherit;               /* 继承父级颜色（深红子页里是黑字）*/
+  display: flex;
+  flex-direction: column;       /* 图在上，字在下 */
+  align-items: center;
+}
+
+.project-subnav img {
+  width: 180px;                 /* “适中” 尺寸：可改成 220px 等 */
+  height: auto;
+  border-radius: 0;          /* 圆角；想直角改成 0 */
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  transition: transform .2s ease;
+}
+
+.project-subnav span {
+  margin-top: 8px;
+  font-size: 1.1rem;            /* 比正文略大一点 */
+}
+
+.project-subnav a:hover img,
+.project-subnav a:focus img {
+  transform: translateY(-4px);  /* 轻微上浮动效 */
+}
+/* ────────────────────────────────────────────────────── */
+
+/* ─── 项目详情页的整体容器 ─────────────────────────── */
+.project-detail {
+  min-height: 100vh;
+  background: #f8f7dc;     /* 保持与其他子页一致；若想用深红改这里 */
+  position: relative;
+  padding-left: 80px;      /* 给箭头留出空间 */
+}
+
+/* ─── 左侧返回箭头 ───────────────────────────────── */
+.back-arrow {
+  position: fixed;         /* 图标固定在视口而非随滚动 */
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: solid 2px currentColor;
+  border-width: 2px 2px 0 0;   /* 只留下 ↖ 形状的一半 */
+  transform: translateY(-50%) rotate(135deg);
+  text-indent: -9999px;    /* 隐藏文本 */
+}
+
+.back-arrow:hover,
+.back-arrow:focus {
+  opacity: 0.7;            /* 简单 hover 效果 */
+}
+
+/* ─── 标题与正文沿用原来的排版 ────────────────────── */
+
+.project-detail .page-title {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.project-detail .main-content {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  line-height: 1.8;
+}
