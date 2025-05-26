@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Georgia, serif;
-  font-size: 12px;        /* 全站统一 12px */
+  font-size: 20px;        /* 全站统一 20px */
   color: #000;
 }
 
@@ -55,6 +55,23 @@ html, body {
   line-height: 1.6;
 }
 
+/* ----------------------------------------- */
+/*  主页文字统一白色 + 引用左下宋体           */
+/* ----------------------------------------- */
+
+/* 整个主页 hero 区及其链接 */
+.home-hero,
+.home-hero a {
+  color: #fff;            /* 文字全部变白 */
+}
+
+/* 仅主页里的中文引用 */
+.home-hero .quote {
+  left: 40px;             /* 从右移到左 */
+  right: auto;
+  font-family: "SimSun", serif;   /* 指定宋体 */
+}
+
 /* 页脚 */
 footer {
   text-align: center;
@@ -66,7 +83,7 @@ footer {
 /* ----------------------------------------- */
 .subpage {
   min-height: 100vh;
-  background: #4d0000;    /* 高灰度深红色 */
+  background: #f8f7dc;    /* 米色 */
   position: relative;
   padding-left: 240px;    /* 预留给导航 */
 }
