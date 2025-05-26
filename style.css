@@ -239,3 +239,8 @@ footer {
   height: 100%;
   border: 0;
 }
+
+/* ─── 子页面导航栏文字改黑 ─────────────────────────── */
+.subpage .nav-vertical a {
+  color: #000 !important;     /* 黑色；!important 保证压过上面那条 */
+}
