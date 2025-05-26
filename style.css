@@ -49,7 +49,7 @@ html, body {
 }
 .nav-vertical a {
   text-decoration: none;
-  color: inherit;         /* 纯文本黑色 */
+  color: #f8eedc;         /* 纯文本黑色 */
 }
 
 /* 右下中文引用 */
