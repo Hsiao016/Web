@@ -99,7 +99,7 @@ footer {
 /* 继续复用垂直导航栏：固定在左中 */
 .subpage .nav-vertical {
   position: fixed;
-  left: 40px;
+  left: 200px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -117,4 +117,15 @@ footer {
   max-width: 700px;
   margin: 0 auto 80px;
   line-height: 1.8;
+}
+/* 只作用于子页面主内容里的<p> */
+.subpage .main-content p {
+  margin: 1em 0;        /* 段前段后距：默认 1em≈基础字号 1 倍 */
+  line-height: 1.8;     /* 行距：可保持或微调 */
+  text-indent: 0;     /* 首行缩进 2 个字符宽，你也可以设 0 */
+}
+/* 仅子页面正文字号，不影响导航 */
+.subpage .main-content {
+  font-size: 15px;   /* 例：1.125 rem ≈ 18 px（以根 16 px 计算）*/
+  line-height: 1;      /* 如已满意可省略 */
 }
