@@ -215,13 +215,13 @@ footer {
 .project-detail .page-title {
   text-align: center;
   padding-top: 60px;
-  font-size: 2em;
+  font-size: 15px;
   margin-bottom: 40px;
 }
 
 .project-detail .main-content {
   max-width: 700px;
-  margin: 0 auto 80px;
+  margin: 0 auto 15px;
   line-height: 1.8;
 }
 
